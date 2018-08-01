@@ -1,0 +1,46 @@
+{% extends 'form/base.html' %}
+{% block content %}
+
+<body id="page-top">
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Website</h1>
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-row">
+          <label for="first" class = "text-white mb-0">Please list the 3 things you most want people to know about this project? (eg: self-directed, clever technique, we provided crucial shoot supervision, we utilized all 3 Carbon studios) ... and provide a little detail for each.</label>
+          <input id="first" type="text" name="first" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" placeholder="1st">
+          <input id="second" type="text" name="second" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" placeholder="2nd">
+          <input id="third" type="text" name="third" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" placeholder="3rd">          
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question2" class = "text-white mb-0">How did the project come to Carbon? (eg: did we win a difficult creative pitch? Do we have a long-standing relationship with the agency/client/director)?</label>
+          <textarea id="question2" class="form-control" name="question2" rows="5" maxlength="500"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question3" class = "text-white mb-0">If not listed above, please provide some detail about the most interesting creative or technical challenge in the project.</label>
+          <textarea id="question3" class="form-control" name="question3" rows="5" maxlength="500"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="artistQuote" class = "text-white mb-0">Provide a quote from the lead artist/producer from carbon.</label>
+          <textarea id="artistQuote" class="form-control" name="artistQuote" rows="5" maxlength="500"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="directorQuote" class = "text-white mb-0">Provide a testimonial/quote from the director/agency/client.</label>
+          <textarea id="directorQuote" class="form-control" name="directorQuote" rows="5" maxlength="500"></textarea>
+        </div>
+        <br>
+        <input type="submit" value="ok" class="btn btn-primary js-scroll-trigger"/>
+        <br>
+      </form>
+    </div>
+  </header>
+  <section id="about" class="about-section text-center"></section>
+</body>
+
+{% endblock %}

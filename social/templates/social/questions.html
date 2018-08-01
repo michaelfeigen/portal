@@ -1,0 +1,95 @@
+{% extends 'form/base.html' %}
+{% block content %}
+
+<body id="page-top">
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">PR & Social</h1>
+      <br>
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-row">
+          <div class="col">
+            <h2 class="text-white-50 mx-auto mt-2">General</h2>
+            <input id="office" type="text" name="office" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Office" >
+            <input id="contact" type="text" name="contact" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Contact" >
+            <input id="projectName" type="text" name="projectName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Project Name" >
+            <input id="filters" type="text" name="filters" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Filters: (Featured/VFX/Color)" >
+          </div>
+          <div class="col">
+            <h2 class="text-white-50 mx-auto mt-2">Credits</h2>
+            <input id="productionCompanyName" type="text" name="productionCompanyName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Production Company" >
+            <input id="directorName" type="text" name="directorName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Director" >
+            <input id="agencyName" type="text" name="agencyName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Agency" >
+            <input id="clientName" type="text" name="clientName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Client" >
+            <input id="productName" type="text" name="productName" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Product" >
+          </div>
+        </div>
+        <br>
+        <br>
+        <h2 class="text-white-50 mx-auto mt-2">Project Specifics</h2>
+        <br>
+        <div class="form-row">
+          <label for="question1" class = "text-white mb-0">What is this project about? What was the creative brief like?</label>
+          <textarea id="question1" class="form-control" name="question1" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question2" class = "text-white mb-0">What was Carbon’s speciic role in this project?</label>
+          <textarea id="question2" class="form-control" name="question2" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question3" class = "text-white mb-0">Who are the key agency/creatives we should mention?</label>
+          <textarea id="question3" class="form-control" name="question3" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question4" class = "text-white mb-0">What aspects of the project should we focus on?</label>
+          <textarea id="question4" class="form-control" name="question4" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question5" class = "text-white mb-0">Is there anything technically interesting worth noting? [ make sure to explain the technique a bit so we know what we are writing about ]</label>
+          <textarea id="question5" class="form-control" name="question5" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question6" class = "text-white mb-0">What are some highlights from the production?</label>
+          <textarea id="question6" class="form-control" name="question6" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question7" class = "text-white mb-0">What was the collaborative process like?</label>
+          <textarea id="question7" class="form-control" name="question7" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question8" class = "text-white mb-0">Were there any technical challenges?</label>
+          <textarea id="question8" class="form-control" name="question8" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <label for="question9" class = "text-white mb-0">Is there anything else you feel is important to mention?</label>
+          <textarea id="question9" class="form-control" name="question9" rows="5" maxlength="2000"></textarea>
+        </div>
+        <br>
+        <div class="form-row">
+          <div class="col">
+            <input id="platform" type="text" name="platform" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder=" which platforms? (full press release or just social)" >
+          </div>
+          <div class="col">
+            <input id="quote" type="text" name="quote" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Quote from agency CD / Director / client" >
+          </div>
+        </div>
+        <br>
+        <input type="submit" value="ok" class="btn btn-primary js-scroll-trigger"/>
+      </form>
+    </div>
+    <br>
+  </header>
+  <section id="about" class="about-section text-center"></section>
+</body>
+
+{% endblock %}

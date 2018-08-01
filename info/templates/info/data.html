@@ -1,0 +1,730 @@
+{% extends 'form/base.html' %}
+{% block content %}
+
+<body id="page-top">
+  <head>
+    <script type="text/javascript">
+      function unhide(divID) {
+        var item = document.getElementById(divID);
+        if (item) {
+          item.className=(item.className=='hidden')?'unhidden':'hidden';
+        }
+      }
+      
+    </script>
+  </head>
+  <!-- Header --> 
+  <h1 class="text-white-50 mx-auto mt-2 ">Job Name: {{ data.jobName }} </h1> 
+  <h1 class="text-white-50 mx-auto mt-2 mb-5"> Job Id: {{ data.jobId }} </h1> 
+</body>
+
+<div class="container d-flex h-100 align-items-center">
+  <div class="mx-auto text-center">
+    <a href="javascript:unhide('hideWiredrive');"  class="btn btn-primary js-scroll-trigger expand ">Wiredrive Answers</a>
+    <br>
+    <div id="hideWiredrive"  class="hidden">
+      <h1 class="text-white-50 mx-auto mt-2 mb-5">Wiredrive Answers</h1>
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th colspan="2" scope="col">Version/Master</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Title</th>
+            <td>{{ wiredriveData.title }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Isci ID</th>
+            <td>{{ wiredriveData.isciId }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="text-white-50 mx-auto mt-2">Tag Questionare</h2>
+      <div class="row ">
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Format</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">film</th>
+                <td>{{ checklistData.film }}</td>
+              </tr>
+              <tr>
+                <th scope="row">TV</th>
+                <td>{{ checklistData.TV }}</td>
+              </tr>
+              <tr>
+                <th scope="row">web</th>
+                <td>{{ checklistData.web }}</td>
+              </tr>
+              <tr>
+                <th scope="row">social</th>
+                <td>{{ checklistData.social }}</td>
+              </tr>
+              <tr>
+                <th scope="row">music video</th>
+                <td>{{ checklistData.musicVideo }}</td>
+              </tr>
+              <tr>
+                <th scope="row">short film</th>
+                <td>{{ checklistData.shortFilm }}</td>
+              </tr>
+              <tr>
+                <th scope="row">feature</th>
+                <td>{{ checklistData.feature }}</td>
+              </tr>
+              <tr>
+                <th scope="row">computer game</th>
+                <td>{{ checklistData.computerGame }}</td>
+              </tr>
+              <tr>
+                <th scope="row">VR</th>
+                <td>{{ checklistData.VR }}</td>
+              </tr>
+              <tr>
+                <th scope="row">PSA</th>
+                <td>{{ checklistData.PSA }}</td>
+              </tr>
+              <tr>
+                <th scope="row">comedy</th>
+                <td>{{ checklistData.comedy }}</td>
+              </tr>
+              <tr>
+                <th scope="row">celebrity</th>
+                <td>{{ checklistData.celebrity }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Direction</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">supervision</th>
+                <td>{{ checklistData.supervision }}</td>
+              </tr>
+              <tr>
+                <th scope="row">shoot</th>
+                <td>{{ checklistData.shoot }}</td>
+              </tr>
+              <tr>
+                <th scope="row">tableTop</th>
+                <td>{{ checklistData.tableTop }}</td>
+              </tr>
+              <tr>
+                <th scope="row">model</th>
+                <td>{{ checklistData.model }}</td>
+              </tr>
+              <tr>
+                <th scope="row">stop frame</th>
+                <td>{{ checklistData.stopFrame }}</td>
+              </tr>
+              <tr>
+                <th scope="row">product</th>
+                <td>{{ checklistData.product }}</td>
+              </tr>
+              <tr>
+                <th scope="row">pack shot</th>
+                <td>{{ checklistData.packShot }}</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Color</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">grade</th>
+                <td>{{ checklistData.grade }}</td>
+              </tr>
+              <tr>
+                <th scope="row">grading</th>
+                <td>{{ checklistData.grading }}</td>
+              </tr>
+              <tr>
+                <th scope="row">colorist</th>
+                <td>{{ checklistData.colorist }}</td>
+              </tr>
+              <tr>
+                <th scope="row">beauty</th>
+                <td>{{ checklistData.beauty }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">2D</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">VFX</th>
+                <td>{{ checklistData.VFX }}</td>
+              </tr>
+              <tr>
+                <th scope="row">visual effects</th>
+                <td>{{ checklistData.visualEffects }}</td>
+              </tr>
+              <tr>
+                <th scope="row">compositing</th>
+                <td>{{ checklistData.compositing }}</td>
+              </tr>
+              <tr>
+                <th scope="row">photo real</th>
+                <td>{{ checklistData.photoReal }}</td>
+              </tr>
+              <tr>
+                <th scope="row">clean up</th>
+                <td>{{ checklistData.cleanUp }}</td>
+              </tr>
+              <tr>
+                <th scope="row">screen replace</th>
+                <td>{{ checklistData.screenReplace }}</td>
+              </tr>
+              <tr>
+                <th scope="row">integration</th>
+                <td>{{ checklistData.integration }}</td>
+              </tr>
+              <tr>
+                <th scope="row">timelapse</th>
+                <td>{{ checklistData.timelapse }}</td>
+              </tr>
+              <tr>
+                <th scope="row">projection</th>
+                <td>{{ checklistData.projection }}</td>
+              </tr>
+              <tr>
+                <th scope="row">retouch</th>
+                <td>{{ checklistData.retouch }}</td>
+              </tr>
+                <tr>
+                <th scope="row">beauty retouching</th>
+                <td>{{ checklistData.beautyRetouching }}</td>
+              </tr>
+              <tr>
+                <th scope="row">end tag</th>
+                <td>{{ checklistData.endTag2D }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Categories broken down by creative content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">design</th>
+                <td>{{ checklistData.design }}</td>
+              </tr>
+              <tr>
+                <th scope="row">animation</th>
+                <td>{{ checklistData.animation }}</td>
+              </tr>
+              <tr>
+                <th scope="row">character</th>
+                <td>{{ checklistData.character }}</td>
+              </tr>
+              <tr>
+                <th scope="row">handDrawn</th>
+                <td>{{ checklistData.handDrawn }}</td>
+              </tr>
+              <tr>
+                <th scope="row">collage</th>
+                <td>{{ checklistData.collage }}</td>
+              </tr>
+              <tr>
+                <th scope="row">illustration</th>
+                <td>{{ checklistData.illustration }}</td>
+              </tr>
+              <tr>
+                <th scope="row">mixedMedia</th>
+                <td>{{ checklistData.mixedMedia }}</td>
+              </tr>
+              <tr>
+                <th scope="row">stylized</th>
+                <td>{{ checklistData.stylized }}</td>
+              </tr>
+              <tr>
+                <th scope="row">graphic</th>
+                <td>{{ checklistData.graphic }}</td>
+              </tr>
+              <tr>
+                <th scope="row">logo</th>
+                <td>{{ checklistData.logo }}</td>
+              </tr>
+                <tr>
+                <th scope="row">craft</th>
+                <td>{{ checklistData.craft }}</td>
+              </tr>
+              <tr>
+                <th scope="row">handMade</th>
+                <td>{{ checklistData.handMade }}</td>
+              </tr>
+              <tr>
+                <th scope="row">practical</th>
+                <td>{{ checklistData.practical }}</td>
+              </tr>
+                  <tr>
+                <th scope="row">paper</th>
+                <td>{{ checklistData.paper }}</td>
+              </tr>
+                  <tr>
+                <th scope="row">text</th>
+                <td>{{ checklistData.text }}</td>
+              </tr>
+              <tr>
+                <th scope="row">motion graphics</th>
+                <td>{{ checklistData.motionGraphics }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">Common recurring genres</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">automotive</th>
+                <td>{{ checklistData.automotive }}</td>
+              </tr>
+              <tr>
+                <th scope="row">fashion</th>
+                <td>{{ checklistData.fashion }}</td>
+              </tr>
+              <tr>
+                <th scope="row">sport</th>
+                <td>{{ checklistData.sport }}</td>
+              </tr>
+              <tr>
+                <th scope="row">blank</th>
+                <td>{{ checklistData.blank }}</td>
+              </tr>
+              <tr>
+                <th scope="row">pharma</th>
+                <td>{{ checklistData.pharma }}</td>
+              </tr>
+              <tr>
+                <th scope="row">food</th>
+                <td>{{ checklistData.food }}</td>
+              </tr>
+              <tr>
+                <th scope="row">technology</th>
+                <td>{{ checklistData.technology }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+          <table class="table table-bordered table-dark">
+            <thead>
+              <tr>
+                <th colspan="2" scope="col">3D</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              <th scope="row">CGI</th>
+                <td>{{ checklistData.CGI }}</td>
+              </tr>
+              <tr>
+                <th scope="row">matte painting</th>
+                <td>{{ checklistData.mattePainting }}</td>
+              </tr>
+              <tr>
+                <th scope="row">simulation</th>
+                <td>{{ checklistData.simulation }}</td>
+              </tr>
+              <tr>
+                <th scope="row">water</th>
+                <td>{{ checklistData.water }}</td>
+              </tr>
+              <tr>
+                <th scope="row">liquids</th>
+                <td>{{ checklistData.liquids }}</td>
+              </tr>
+              <tr>
+                <th scope="row">particles</th>
+                <td>{{ checklistData.particles }}</td>
+              </tr>
+              <tr>
+                <th scope="row">smoke</th>
+                <td>{{ checklistData.smoke }}</td>
+              </tr>
+              <tr>
+                <th scope="row">cloth</th>
+                <td>{{ checklistData.cloth }}</td>
+              </tr>
+              <tr>
+                <th scope="row">shatter</th>
+                <td>{{ checklistData.shatter }}</td>
+              </tr>
+              <tr>
+                <th scope="row">fire</th>
+                <td>{{ checklistData.fire }}</td>
+              </tr>
+                <tr>
+                <th scope="row">photoscan</th>
+                <td>{{ checklistData.photoscan }}</td>
+              </tr>
+              <tr>
+                <th scope="row">crowd</th>
+                <td>{{ checklistData.crowd }}</td>
+              </tr>
+              <tr>
+                <th scope="row">stadium</th>
+                <td>{{ checklistData.stadium }}</td>
+              </tr>
+                  <tr>
+                <th scope="row">environment</th>
+                <td>{{ checklistData.environment }}</td>
+              </tr>
+                  <tr>
+                <th scope="row">fur</th>
+                <td>{{ checklistData.fur }}</td>
+              </tr>
+              <tr>
+                <th scope="row">hair</th>
+                <td>{{ checklistData.hair }}</td>
+              </tr>
+              </tr>
+                  <tr>
+                <th scope="row">creature</th>
+                <td>{{ checklistData.creature }}</td>
+              </tr>
+                  <tr>
+                <th scope="row">set extension</th>
+                <td>{{ checklistData.setExtension }}</td>
+              </tr>
+              <tr>
+                <th scope="row">end tag</th>
+                <td>{{ checklistData.endTag3D }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th colspan="2" scope="col">Headline Search terms for content</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">key visual content</th>
+            <td>{{ checklistData.keyVisualContent }}</td>
+          </tr>
+          <tr>
+            <th scope="row">famous talent</th>
+            <td>{{ checklistData.famousTalent }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2 class="text-white-50 mx-auto mt-2">External and internal Credits</h2>
+      <table class="table table-bordered table-dark">
+        <tbody>
+          <tr>
+            <th scope="row">carbon CD name</th>
+            <td>{{ creditData.carbonCdName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">client name</th>
+            <td>{{ creditData.clientName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">director name</th>
+            <td>{{ creditData.directorName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">production company name</th>
+            <td>{{ creditData.productionCompanyName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">colorist name</th>
+            <td>{{ creditData.coloristName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">product name</th>
+            <td>{{ creditData.productName }}</td>
+          </tr>
+          <tr>
+            <th scope="row">film title</th>
+            <td>{{ creditData.filmTitle }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="text-white-50 mx-auto mt-2">File Path</h2>
+      <table class="table table-bordered table-dark">
+        <tbody>
+          <tr>
+            <th scope="row">file path location of thumbnail</th>
+            <td>{{ filePathData.thumbnailPath }}</td>
+          </tr>
+          <tr>
+            <th scope="row">file path location of Wiredrive spec video created</th>
+            <td>{{ filePathData.specPath }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br>
+    <a href="javascript:unhide('hideWebsite');"  class="btn btn-primary js-scroll-trigger expand">Website Answers</a>
+    <br>
+    <div id="hideWebsite"  class="hidden">
+      <h1 class="text-white-50 mx-auto mt-2 mb-5">Website Answers</h1>
+        <h2 class="text-white-50 mx-auto mt-2">File Path</h2>
+        <table class="table table-bordered table-dark">
+          <tbody>
+            <tr>
+              <th scope="col" colspan="2">file path location of Vimeo spec video created</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ websiteData.vimeoPath }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">file path location of thumbnail image</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ websiteData.thumbnailImagePath }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">file path location of rollover gif</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ websiteData.rolloverGifPath }}</th>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-white-50 mx-auto mt-2">Location</h2>
+        <table class="table table-bordered table-dark">
+          <thead>
+            <tr>
+              <th colspan="2" scope="col">Which pages of website will this film appear on?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">lab</th>
+              <td>{{ websiteData.labPage }}</td>
+            </tr>
+            <tr>
+              <th scope="row">VFX</th>
+              <td>{{ websiteData.vfxPage }}</td>
+            </tr>
+            <tr>
+              <th scope="row">color</th>
+              <td>{{ websiteData.colorPage }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="text-white-50 mx-auto mt-2">Case Study</h2>
+        <table class="table table-bordered table-dark">
+          <thead>
+            <tr>
+              <th colspan="2" scope="col">Please list the 3 things you most want people to know about this project?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">first</th>
+              <td>{{ caseStudyData.first }}</td>
+            </tr>
+            <tr>
+              <th scope="row">second</th>
+              <td>{{ caseStudyData.second }}</td>
+            </tr>
+            <tr>
+              <th scope="row">third</th>
+              <td>{{ caseStudyData.third }}</td>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">How did the project come to Carbon? (eg: did we win a difficult creative pitch? Do we have a long-standing relationship with the agency/client/director)?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ caseStudyData.question2 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">If not listed above, please provide some detail about the most interesting creative or technical challenge in the project.</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ caseStudyData.question3 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Provide a quote from the lead artist/producer from carbon</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ caseStudyData.artistQuote }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Provide a testimonial/quote from the director/agency/client.</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ caseStudyData.directorQuote }}</th>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <br>
+    <a href="javascript:unhide('hideSocial');"  class="btn btn-primary js-scroll-trigger expand">PR & Social Answers</a>
+    <div id="hideSocial"  class="hidden">
+      <h1 class="text-white-50 mx-auto mt-2 mb-5">PR & Social Answers</h1>
+       <table class="table table-bordered table-dark">
+          <tbody>
+            <tr>
+              <th scope="row">which platforms? (full press release or just social)</th>
+              <td>{{ socialData.platform }}</td>
+            </tr>
+            <tr>
+              <th scope="row">Quote from agency CD / Director / client</th>
+              <td>{{ socialData.quote }}</td>
+            </tr>
+
+          </tbody>
+        </table>
+        <h2 class="text-white-50 mx-auto mt-2"> Press Release questionnaire</h2>
+        <br>
+        <table class="table table-bordered table-dark">
+          <thead>
+            <tr>
+              <th colspan="2" scope="col">General</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">office</th>
+              <td>{{ socialData.office }}</td>
+            </tr>
+            <tr>
+              <th scope="row">contact</th>
+              <td>{{ socialData.contact }}</td>
+            </tr>
+            <tr>
+              <th scope="row">project name</th>
+              <td>{{ socialData.projectName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">filters</th>
+              <td>{{ socialData.filters }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-dark">
+          <thead>
+            <tr>
+              <th colspan="2" scope="col">Credits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">production company name</th>
+              <td>{{ socialData.productionCompanyName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">director name</th>
+              <td>{{ socialData.directorName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">agency name</th>
+              <td>{{ socialData.agencyName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">client name</th>
+              <td>{{ socialData.clientName }}</td>
+            </tr>
+            <tr>
+              <th scope="row">product name</th>
+              <td>{{ socialData.productName }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table table-bordered table-dark">
+          <tbody>
+            <tr>
+              <th scope="col" colspan="2">What is this project about? What was the creative brief like?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question1 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">What was Carbon’s speciic role in this project?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question2 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Who are the key agency/creatives we should mention?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question3 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">What aspects of the project should we focus on?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question4 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Is there anything technically interesting worth noting?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question5 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">What are some highlights from the production?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question6 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">What was the collaborative process like?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question7 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Were there any technical challenges?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question8 }}</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">Is there anything else you feel is important to mention?</th>
+            </tr>
+            <tr>
+              <th scope="col" colspan="2">{{ socialData.question9 }}</th>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

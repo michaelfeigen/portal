@@ -1,0 +1,291 @@
+{% extends 'form/base.html' %}
+{% block content %}
+
+<body id="page-top">
+  <!-- Header -->
+  <header class="masthead">
+    <div class=" container mx-auto text-center">  
+      <h1 class="mx-auto my-0 text-uppercase">Wiredrive</h1>
+    </div>
+    <br>
+    <form action="" method="post" >
+      {% csrf_token %}
+      <div class="container ">
+        <div class="row ">
+          <div class="col" style="float:right;">
+            <h2 class = "text-white mb-2">Format</h2>
+            <div class="form-check">
+              <input id="film" type="checkbox" name="film"  class="form-check-input"> <a class="text-white mb-0" >Film </a>    
+            </div>
+            <div class="form-check">
+              <input id="TV" type="checkbox" name="TV"  class="form-check-input"> <a class="text-white mb-0" >TV </a>
+            </div>
+            <div class="form-check"> 
+              <input id="web" type="checkbox" name="web"  class="form-check-input"> <a class="text-white mb-0" >Web </a>
+            </div>
+            <div class="form-check">
+              <input id="social" type="checkbox" name="social"  class="form-check-input"> <a class="text-white mb-0" >Social </a> 
+            </div>
+            <div class="form-check">
+              <input id="musicVideo" type="checkbox" name="musicVideo"  class="form-check-input"> <a class="text-white mb-0" >Music Video </a>  
+            </div>
+            <div class="form-check">
+              <input id="shortFilm" type="checkbox" name="shortFilm"  class="form-check-input"> <a class="text-white mb-0" >Short Film </a>
+            </div>
+            <div class="form-check">
+              <input id="feature" type="checkbox" name="feature"  class="form-check-input"> <a class="text-white mb-0" >Feature </a>
+            </div>
+            <div class="form-check"> 
+              <input id="computerGame" type="checkbox" name="computerGame"  class="form-check-input"> <a class="text-white mb-0" >Computer Game </a>
+            </div>
+            <div class="form-check">
+              <input id="VR" type="checkbox" name="VR"  class="form-check-input"> <a class="text-white mb-0" >VR </a> 
+            </div>
+            <div class="form-check">
+              <input id="PSA" type="checkbox" name="PSA"  class="form-check-input"> <a class="text-white mb-0" >PSA </a> 
+            </div>
+            <div class="form-check">
+              <input id="comedy" type="checkbox" name="comedy"  class="form-check-input"> <a class="text-white mb-0" >Comedy </a>
+            </div>
+            <div class="form-check">
+              <input id="celebrity" type="checkbox" name="celebrity"  class="form-check-input"> <a class="text-white mb-0" >Celebrity </a>
+            </div>
+          </div>
+          <div class="col">
+            <h2 class = "text-white mb-2">Direction</h2>
+            <div class="form-check">
+              <input id="supervision" type="checkbox" name="supervision"  class="form-check-input"> <a class="text-white mb-0" >Supervision </a>
+            </div>
+            <div class="form-check">
+              <input id="shoot" type="checkbox" name="shoot"  class="form-check-input"> <a class="text-white mb-0" >Shoot </a>
+            </div>
+            <div class="form-check"> 
+              <input id="tableTop" type="checkbox" name="tableTop"  class="form-check-input"> <a class="text-white mb-0" >Table Top </a> 
+            </div>
+            <div class="form-check">
+              <input id="model" type="checkbox" name="model"  class="form-check-input"> <a class="text-white mb-0" >Model </a> 
+            </div>
+            <div class="form-check">
+              <input id="stopFrame" type="checkbox" name="stopFrame"  class="form-check-input"> <a class="text-white mb-0" >Stop Frame </a>  
+            </div>
+            <div class="form-check">
+              <input id="product" type="checkbox" name="product"  class="form-check-input"> <a class="text-white mb-0" >Product </a> 
+            </div>
+            <div class="form-check">
+              <input id="packShot" type="checkbox" name="packShot"  class="form-check-input"> <a class="text-white mb-0" >Pack Shot </a>  
+            </div>
+          </div>
+          <div class="col">
+            <h2 class = "text-white mb-2">2D</h2>
+            <div class="form-check">
+              <input id="VFX" type="checkbox" name="VFX"  class="form-check-input"> <a class="text-white mb-0" >VFX </a>
+            </div>
+            <div class="form-check">
+              <input id="visualEffects" type="checkbox" name="visualEffects"  class="form-check-input"> <a class="text-white mb-0" >Visual Effects </a> 
+            </div>
+            <div class="form-check"> 
+              <input id="compositing" type="checkbox" name="compositing"  class="form-check-input"> <a class="text-white mb-0" >Compositing </a> 
+            </div>
+            <div class="form-check">
+              <input id="photoReal" type="checkbox" name="photoReal"  class="form-check-input"> <a class="text-white mb-0" >Photo Real </a>
+            </div>
+            <div class="form-check">
+              <input id="cleanUp" type="checkbox" name="cleanUp"  class="form-check-input"> <a class="text-white mb-0" >Clean Up </a>
+            </div>
+            <div class="form-check">
+              <input id="screenReplace" type="checkbox" name="screenReplace"  class="form-check-input"> <a class="text-white mb-0" >Screen Replace </a>
+            </div>
+            <div class="form-check"> 
+              <input id="integration" type="checkbox" name="integration"  class="form-check-input"> <a class="text-white mb-0" >Integration </a> 
+            </div>
+            <div class="form-check">
+              <input id="timelapse" type="checkbox" name="timelapse"  class="form-check-input"> <a class="text-white mb-0" >Timelapse </a> 
+            </div>
+            <div class="form-check">
+              <input id="projection" type="checkbox" name="projection"  class="form-check-input"> <a class="text-white mb-0" >Projection </a>  
+            </div>
+            <div class="form-check">
+              <input id="retouch" type="checkbox" name="retouch"  class="form-check-input"> <a class="text-white mb-0" >Retouch </a> 
+            </div>
+            <div class="form-check">
+              <input id="beautyRetouching" type="checkbox" name="beautyRetouching"  class="form-check-input"> <a class="text-white mb-0" >Beauty Retouching </a>  
+            </div>
+            <div class="form-check">
+              <input id="endTag2D" type="checkbox" name="endTag2D"  class="form-check-input"> <a class="text-white mb-0" >End Tag </a>  
+            </div>
+          </div>   
+        </div>
+        <br>
+        <div class="row">
+        <div class="col">
+          <h2 class = "text-white mb-2">Categories broken down by creative content</h2>
+          <div class="form-check">
+            <input id="design" type="checkbox" name="design"  class="form-check-input"> <a class="text-white mb-0" >Design </a>    
+          </div>
+          <div class="form-check">
+            <input id="animation" type="checkbox" name="animation"  class="form-check-input"> <a class="text-white mb-0" >Animation </a>
+          </div>
+          <div class="form-check"> 
+            <input id="character" type="checkbox" name="character"  class="form-check-input"> <a class="text-white mb-0" >Character </a>
+          </div>
+          <div class="form-check"> 
+            <input id="design" type="checkbox" name="design"  class="form-check-input"> <a class="text-white mb-0" >Design </a>
+          </div>          
+          <div class="form-check">
+            <input id="handDrawn" type="checkbox" name="handDrawn"  class="form-check-input"> <a class="text-white mb-0" >Hand Drawn </a> 
+          </div>
+          <div class="form-check">
+            <input id="collage" type="checkbox" name="collage"  class="form-check-input"> <a class="text-white mb-0" >Collage </a>  
+          </div>
+          <div class="form-check">
+            <input id="illustration" type="checkbox" name="illustration"  class="form-check-input"> <a class="text-white mb-0" >Illustration </a>
+          </div>
+          <div class="form-check">
+            <input id="mixedMedia" type="checkbox" name="mixedMedia"  class="form-check-input"> <a class="text-white mb-0" >Mixed Media </a>
+          </div>
+          <div class="form-check"> 
+            <input id="stylized" type="checkbox" name="stylized"  class="form-check-input"> <a class="text-white mb-0" >Stylized </a>
+          </div>
+          <div class="form-check">
+            <input id="graphic" type="checkbox" name="graphic"  class="form-check-input"> <a class="text-white mb-0" >Graphic </a> 
+          </div>
+          <div class="form-check">
+            <input id="logo" type="checkbox" name="logo"  class="form-check-input"> <a class="text-white mb-0" >Logo </a> 
+          </div>
+          <div class="form-check">
+            <input id="craft" type="checkbox" name="craft"  class="form-check-input"> <a class="text-white mb-0" >Craft </a>
+          </div>
+          <div class="form-check">
+            <input id="handMade" type="checkbox" name="handMade"  class="form-check-input"> <a class="text-white mb-0" >Hand Made </a>
+          </div>
+          <div class="form-check">
+            <input id="practical" type="checkbox" name="practical"  class="form-check-input"> <a class="text-white mb-0" >Practical </a> 
+          </div>
+          <div class="form-check">
+            <input id="paper" type="checkbox" name="paper"  class="form-check-input"> <a class="text-white mb-0" >Paper </a> 
+          </div>
+          <div class="form-check">
+            <input id="text" type="checkbox" name="text"  class="form-check-input"> <a class="text-white mb-0" >type/typography/text/titles </a>
+          </div>      
+          <div class="form-check">
+            <input id="motionGraphics" type="checkbox" name="motionGraphics"  class="form-check-input"> <a class="text-white mb-0" >Motion Graphics </a>
+          </div>
+        </div>
+        <div class="col">
+          <h2 class = "text-white mb-2">Color</h2>
+          <div class="form-check">
+            <input id="grade" type="checkbox" name="grade"  class="form-check-input"> <a class="text-white mb-0" >Grade </a>
+          </div>
+          <div class="form-check">
+            <input id="grading" type="checkbox" name="grading"  class="form-check-input"> <a class="text-white mb-0" >Grading </a>
+          </div>
+          <div class="form-check"> 
+            <input id="colorist" type="checkbox" name="colorist"  class="form-check-input"> <a class="text-white mb-0" >Colorist </a> 
+          </div>
+          <div class="form-check">
+            <input id="beauty" type="checkbox" name="beauty"  class="form-check-input"> <a class="text-white mb-0" >Beauty </a> 
+          </div>
+        </div> 
+        <div class="col">
+          <h2 class = "text-white mb-2">3D</h2>
+          <div class="form-check">
+            <input id="CGI" type="checkbox" name="CGI"  class="form-check-input"> <a class="text-white mb-0" >CGI </a>
+          </div>
+          <div class="form-check">
+            <input id="mattePainting" type="checkbox" name="mattePainting"  class="form-check-input"> <a class="text-white mb-0" >Matte Painting </a> 
+          </div>
+          <div class="form-check"> 
+            <input id="simulation" type="checkbox" name="simulation"  class="form-check-input"> <a class="text-white mb-0" >Simulation </a> 
+          </div>
+          <div class="form-check">
+            <input id="water" type="checkbox" name="water"  class="form-check-input"> <a class="text-white mb-0" >Water </a>
+          </div>
+          <div class="form-check">
+            <input id="liquids" type="checkbox" name="liquids"  class="form-check-input"> <a class="text-white mb-0" >Liquids </a>
+          </div>
+          <div class="form-check">
+            <input id="particles" type="checkbox" name="particles"  class="form-check-input"> <a class="text-white mb-0" >Particles </a> 
+          </div>
+          <div class="form-check"> 
+            <input id="smoke" type="checkbox" name="smoke"  class="form-check-input"> <a class="text-white mb-0" >Smoke </a> 
+          </div>
+          <div class="form-check">
+            <input id="cloth" type="checkbox" name="cloth"  class="form-check-input"> <a class="text-white mb-0" >Cloth </a>
+          </div>
+          <div class="form-check">
+            <input id="shatter" type="checkbox" name="shatter"  class="form-check-input"> <a class="text-white mb-0" >Shatter </a>
+          </div>
+          <div class="form-check">
+            <input id="fire" type="checkbox" name="fire"  class="form-check-input"> <a class="text-white mb-0" >Fire </a> 
+          </div>
+          <div class="form-check"> 
+            <input id="photoscan" type="checkbox" name="photoscan"  class="form-check-input"> <a class="text-white mb-0" >Photoscan </a> 
+          </div>
+          <div class="form-check">
+            <input id="crowd" type="checkbox" name="crowd"  class="form-check-input"> <a class="text-white mb-0" >Crowd </a>
+          </div>
+          <div class="form-check">
+            <input id="stadium" type="checkbox" name="stadium"  class="form-check-input"> <a class="text-white mb-0" >Stadium </a>
+          </div>
+          <div class="form-check">
+            <input id="environment" type="checkbox" name="environment"  class="form-check-input"> <a class="text-white mb-0" >Environment </a> 
+          </div>
+          <div class="form-check"> 
+            <input id="fur" type="checkbox" name="fur"  class="form-check-input"> <a class="text-white mb-0" >Fur </a> 
+          </div>
+          <div class="form-check">
+            <input id="hair" type="checkbox" name="hair"  class="form-check-input"> <a class="text-white mb-0" >Hair </a>
+          </div>
+          <div class="form-check">
+            <input id="creature" type="checkbox" name="creature"  class="form-check-input"> <a class="text-white mb-0" >Creature </a>
+          </div>
+          <div class="form-check">
+            <input id="setExtension" type="checkbox" name="setExtension"  class="form-check-input"> <a class="text-white mb-0" >Set Extension </a> 
+          </div>
+          <div class="form-check"> 
+            <input id="endTag3D" type="checkbox" name="endTag3D"  class="form-check-input"> <a class="text-white mb-0" >End Tag </a> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2 class = "text-white mb-2">Common recurring Genres</h2>
+          <div class="form-check">
+            <input id="automotive" type="checkbox" name="automotive"  class="form-check-input"> <a class="text-white mb-0" >Cars / Automotive </a>
+          </div>
+          <div class="form-check">
+            <input id="fashion" type="checkbox" name="fashion"  class="form-check-input"> <a class="text-white mb-0" >Fashion / clothing / apparel / Beauty </a>
+          </div>
+          <div class="form-check"> 
+            <input id="sport" type="checkbox" name="sport"  class="form-check-input"> <a class="text-white mb-0" >Sport / football / basketball / soccer / Baseball / Olympics </a> 
+          </div>
+          <div class="form-check">
+            <input id="blank" type="checkbox" name="blank"  class="form-check-input"> <a class="text-white mb-0" >Bank / Credit Card / Financial / Insurance </a> 
+          </div>
+          <div class="form-check">
+            <input id="pharma" type="checkbox" name="pharma"  class="form-check-input"> <a class="text-white mb-0" >Pharma / medicine / medical </a> 
+          </div>
+          <div class="form-check">
+            <input id="food" type="checkbox" name="food"  class="form-check-input"> <a class="text-white mb-0" >Food / cereal / butter / wine etc / package goods </a> 
+          </div>        
+          <div class="form-check">
+            <input id="technology" type="checkbox" name="technology"  class="form-check-input"> <a class="text-white mb-0" >Technology / TV / phone / camera </a> 
+          </div>
+        </div>  
+      </div>   
+      <br>
+      <div class=" container mx-auto text-center">
+        <input id="keyVisualContent" type="text" name="keyVisualContent" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" placeholder="List key visual content">
+        <br>
+        <input id="famousTalent" type="text" name="famousTalent" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="List any famous talent/celebrity names" >
+        <br>
+        <input type="submit" value="ok" class="btn btn-primary js-scroll-trigger"/>
+        <br>
+        <br>
+      </div>
+    </form>
+  </header>
+  <section id="about" class="about-section text-center"></section>
+</body>
+  
+{% endblock %}

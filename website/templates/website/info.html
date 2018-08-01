@@ -1,0 +1,35 @@
+{% extends 'form/base.html' %}
+{% block content %}
+
+<body id="page-top">
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Website</h1>
+        <form action="" method="post">
+          {% csrf_token %}
+          <input id="vimeoPath" type="text" name="vimeoPath" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" placeholder="Enter file path location of Vimeo spec video created">
+          <input id="thumbnailImagePath" type="text" name="thumbnailImagePath" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Enter file path location of thumbnail image" >
+          <input id="rolloverGifPath" type="text" name="rolloverGifPath" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0"  placeholder="Enter file path location of rollover gif" ><br><br>
+          <label class = "text-white mb-0">Which pages of website will this film appear on?</label> <br>
+          <div class="form-check form-check-inline">
+            <input id="labPage" type="checkbox" name="labPage"  class="form-check-input"> <a class="text-white mb-0" >lab </a>
+          </div>  
+          <div class="form-check form-check-inline">
+            <input id="vfxPage" type="checkbox" name="vfxPage"  class="form-check-input"> <a class="text-white mb-0" >VFX </a>
+          </div>
+          <div class="form-check form-check-inline">
+            <input id="colorPage" type="checkbox" name="colorPage"  class="form-check-input"> <a class="text-white mb-0" >color </a>
+          </div> 
+          <br>
+          <br>
+          <br>
+          <input type="submit" value="ok" class="btn btn-primary js-scroll-trigger"/>
+        </form>  
+      </div>
+    </div>
+  </header>
+</body>
+
+{% endblock %}
