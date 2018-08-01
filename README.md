@@ -29,17 +29,20 @@ These instructions will get a copy of the project up and running on your local m
 
 
 ### Installation
-* [Install Python 3.7](https://www.python.org/downloads/release/python-370/)
-* [Install Django 2.0.7](https://www.djangoproject.com/download/)
 
-After installing Django and Python, go to the directory in which you downloaded the project. For example, if your directory is called WebAp:
+After installing Python, go to the directory in which you downloaded the project. For example, if your directory is called portal:
 ```
-cd WebApp
+cd portal
 ```
+Run the following command to install Django:
+```
+pip install django
+```
+
 Some of these applications use at least one database table, so we need to create the tables in the databse before we can use them. To do that run the following command:
 ```
 python manage.py makemigrations
-python manage.oy migrate
+python manage.py migrate
 ```
 Also note that anytime you change something in models.py you must run these same commands.
 
@@ -58,7 +61,7 @@ If you are new to Django, a great tutorial that will familiarize you with how th
 ```
 python manage.py startapp appname
 ```
-There are several things you must do when creating new apps and a full tutorial can be found [here](https://docs.djangoproject.com/en/2.0/intro/tutorial01/). In this project, the different apps are form, info, website, wiredrive and social. Inside each app, there is a folder called templates. All HTML files are always stored inside the templates folder. Additionaly, each app contains a module called views.py. This module controls what HTML templates get loaded onto the screen and how you interact with the web application. Furthermore, each app contains a module called models.py where you can organize how you want your database to look and how you want to store each app's data. 
+There are several things you must do when creating new apps and a full tutorial can be found [here](https://docs.djangoproject.com/en/2.0/intro/tutorial01/). In this project, the different apps are form, info, website, wiredrive and social. Inside each app, there is a folder called templates. All HTML files are always stored inside the templates folder. Additionally, each app contains a module called views.py. This module controls what HTML templates get loaded onto the screen and how you interact with the web application. Furthermore, each app contains a module called models.py where you can organize how you want your database to look and how you want to store each app's data. 
 
 If you are interested in style, everything that has to do with how the page looks can be found in forms/static. 
 
