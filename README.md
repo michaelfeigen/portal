@@ -4,32 +4,24 @@ Web application built with [Python 3.7](https://www.python.org/downloads/release
 
 <img src="/form/static/form/img/loop.gif">
 
-![](form/static/form/img/loop.mp4)
-
 ## Motivation
 Portal is a web application that's designed to streamline the job completion process at Carbon VFX, a visual effects and motion graphics company. Essentially, when a project is finished, producers go on the web app and fill out the required information forms. The web app automatically generates emails and sends the relevant information to the right people. Later, when producers want to see information about a particular job, they can come back to the web app and view their colleagues' answers. 
-
 
 
 ## Demo
 
 ### Portal Form
 
-<img src="/form/static/form/img/form.mp4">
-
-![](form/static/form/img/form.mp4)
-
+<img src="/form/static/form/img/form.gif">
 
 ### Portal Database Viewer
 
-<img src="/form/static/form/img/DbView.mp4">
+<img src="/form/static/form/img/DbView.gif">
 
-![](form/static/form/img/DbView.mp4)
 
 ## Getting Started
 
 These instructions will get a copy of the project up and running on your local machine.
-
 
 
 ### Installation
@@ -91,5 +83,5 @@ A good exapmle of this can be found in the wiredrive/views.py.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](portal/LICENSE) file for details
 
