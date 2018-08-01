@@ -12,9 +12,13 @@ Portal is a web application that's designed to streamline the job completion pro
 
 ### Portal Form
 
+click [here](https://www.youtube.com/watch?v=SbSJWxvMICU&feature=youtu.be) to watch the full demo. 
+
 <img src="/form/static/form/img/form.gif">
 
 ### Portal Database Viewer
+
+click [here](https://www.youtube.com/watch?v=ukomRNCrmWA&feature=youtu.be) to watch the full demo. 
 
 <img src="/form/static/form/img/DbView.gif">
 
