@@ -46,7 +46,7 @@ python manage.py migrate
 ```
 Also note that anytime you change something in models.py you must run these same commands.
 
-Then run the following command:
+Then run the following command and make sure you go to **/form**:
 ```
 python manage.py runserver
 ```
