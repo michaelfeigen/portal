@@ -89,3 +89,5 @@ A good exapmle of this can be found in the wiredrive/views.py.
 
 This project is licensed under the MIT License - see the [LICENSE.md](portal/LICENSE) file for details
 
+<img src="/form/static/form/img/thanks.gif">
+
